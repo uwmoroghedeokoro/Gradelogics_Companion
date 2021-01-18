@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@drawable/round_linear"
+    android:padding="0dp"
+    android:id="@+id/ly_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:id="@+id/img_pic"
+                android:src="@drawable/grad_kimoby"
+                android:layout_height="70dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="70dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/txt_child_name"
+                        android:textColor="#333"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="John Doe"
+                        android:fontFamily="sans-serif"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/txt_child_class"
+                        android:textColor="#333"
+                        android:textSize="14dp"
+                        android:text="Grade 1"
+                        android:fontFamily="sans-serif"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/txt_child_subject"
+                        android:textColor="#333"
+                        android:textSize="14dp"
+                        android:text="Preparatoy"
+                        android:fontFamily="sans-serif"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/txt_avg"
+                        android:text="60"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="23dp"
+                        android:textColor="#333"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="#333"
+                        android:fontFamily="sans-serif"
+                        android:text="Term AVG"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "370607236432",
+    "firebase_url": "https://gradelogics-companion.firebaseio.com",
+    "project_id": "gradelogics-companion",
+    "storage_bucket": "gradelogics-companion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370607236432:android:eecd63074a9f4d9b5ef855",
+        "android_client_info": {
+          "package_name": "com.gradelogics.roghedeokoro.myapplication2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370607236432-bp6878guq7opa6a2ddb351kq53gtqb21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0NdT3WOZXpcj4krQpXi1QZ97rHY6dwfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370607236432-bp6878guq7opa6a2ddb351kq53gtqb21.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:orientation="vertical"
+    android:background="#ddd"
+    tools:context=".view_msg_Activity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:elevation="4dp"
+        app:title="Messages"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:background="#fff"
+        android:layout_weight="5"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/msg_from"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/proza_libre"
+                    android:textSize="25dp"
+                    android:text="Homework Title"
+                    android:textColor="#54BE91"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#595958"
+                    android:text="Due Date"
+                    android:layout_marginTop="4dp"
+                    android:textSize="13dp"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/msg_date"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#595958"
+                    android:text="Teacher"
+                    android:textSize="13dp"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/msg_teacher"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:background="#54BE91"
+            android:layout_height="1dp"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:id="@+id/msg_body"
+            android:text="Some sample homework stuff to do!"
+            android:fontFamily="sans-serif"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/customborder"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:id="@+id/attach_view"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="View Attachment"
+                android:textColor="#54BE91"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/customborder"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:id="@+id/attach_view2"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="View Attachment"
+                android:textColor="#54BE91"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/customborder"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:id="@+id/attach_view3"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="View Attachment"
+                android:textColor="#54BE91"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/customborder"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:id="@+id/attach_view4"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="View Attachment"
+                android:textColor="#54BE91"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/customborder"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:id="@+id/attach_view5"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="View Attachment"
+                android:textColor="#54BE91"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="#fff"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="#54BE91"
+            android:padding="10dp"
+            android:id="@+id/btn_submit"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:id="@+id/btn_submit_text"
+                android:fontFamily="@font/proza_libre"
+                android:text="Submit Homework"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

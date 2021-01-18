@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F6F6"
+    android:layout_height="match_parent"
+    tools:context=".main_dash">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ly_body"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="30px"
+        android:background="@drawable/app_bg"
+        android:orientation="vertical"
+        android:layout_height="240dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="140dp"
+
+                    android:src="@drawable/gradelogicswhite"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:id="@+id/ico_logout"
+                    android:src="@drawable/icoexit"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/txt_my_name"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/proza_libre"
+            android:textSize="20dp"
+            android:text="John Doe"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/txt_sch_name"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/proza_libre"
+            android:textSize="16dp"
+            android:text="Sch Name"
+            android:layout_height="wrap_content" />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+           <Spinner
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:id="@+id/spin_gradebook"
+               android:layout_height="25dp"></Spinner>
+
+       </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="10dp"
+            android:background="#C2E0F1"
+            android:layout_height="0.5dp"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="#C2E0F1"
+                android:text="Subject"
+                android:textSize="12dp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#C2E0F1"
+                android:text="Class"
+                android:textSize="12dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:id="@+id/spin_subject"
+                android:layout_height="30dp"></Spinner>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/spin_classroom"
+                android:layout_height="30dp"></Spinner>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9c9c9c"
+        ></View>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tblayout"
+        android:background="#fff"
+        app:tabIndicatorColor="#54BE91"
+        android:layout_height="95px">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:padding="10dp"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="#333333">
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/edittextbackground"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone"
+    android:padding="4dp"
+    android:layout_height="55dp">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      android:orientation="horizontal">
+      <Button
+          android:layout_width="0dp"
+          android:text="Assign Grade"
+          android:background="#0FB4EE"
+          android:textSize="14dp"
+          android:id="@+id/btn_assign"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"></Button>
+      <View
+          android:layout_width="2dp"
+          android:layout_height="match_parent"></View>
+      <Button
+          android:layout_width="0dp"
+          android:textSize="14dp"
+          android:id="@+id/btn_msg"
+          android:background="#0FB4EE"
+          android:text="New Message"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"></Button>
+      <View
+          android:layout_width="2dp"
+          android:layout_height="match_parent"></View>
+      <Button
+          android:layout_width="0dp"
+          android:textSize="14dp"
+          android:id="@+id/btn_homework"
+          android:background="#0FB4EE"
+          android:text="New Homework"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"></Button>
+  </LinearLayout>
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/trans_panel"
+    android:visibility="invisible"
+    android:layout_height="match_parent"
+    android:background="#80000000"></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/ly_fab_5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Attendance"></TextView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icoattend"
+            app:backgroundTint="#0FB4EE"
+            app:fabCustomSize="50dp"
+            app:fabSize="auto"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/ly_fab_1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Post Homework"></TextView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/homework_50"
+            app:backgroundTint="#0FB4EE"
+            app:fabCustomSize="50dp"
+            app:fabSize="auto"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/ly_fab_2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Assign Grade"></TextView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/grades_new_50"
+            app:backgroundTint="#0FB4EE"
+            app:fabCustomSize="50dp"
+            app:fabSize="auto"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/ly_fab_3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="New Message"></TextView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/chat_new_50"
+            app:backgroundTint="#0FB4EE"
+            app:fabCustomSize="50dp"
+            app:fabSize="auto"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:scaleType="center"
+        android:src="@drawable/plus_new_50"
+        app:backgroundTint="#0FB4EE"
+        app:fabCustomSize="50dp"
+        app:fabSize="auto"/>
+</RelativeLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F6F6F6"
+    tools:context=".activity_teacher_new_msg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1C63AB"
+        app:titleTextColor="#fff"
+        android:elevation="4dp"
+        app:title="Assign Grades"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ly_body"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="30px"
+            android:background="#F6F6F6"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:text="Provide details of the grade you're about to enter."
+                android:fontFamily="sans-serif"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#333"
+                    android:text="Subject"></TextView>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:inputType="number"
+                    android:padding="3dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:id="@+id/spin_assign_subject"
+                    android:background="@drawable/edittextbackground"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#333"
+                    android:text="Class"></TextView>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#333"
+                    android:inputType="number"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:id="@+id/spin_assign_class"
+                    android:background="@drawable/edittextbackground"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#333"
+                    android:text="Title/Description"></TextView>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:padding="3dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:id="@+id/edt_assign_title"
+                    android:background="@drawable/edittextbackground"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#333"
+                    android:text="Date"></TextView>
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:padding="3dp"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:id="@+id/edt_assign_date"
+                    android:background="@drawable/edittextbackground"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#333"
+                    android:text="Max Score"></TextView>
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:inputType="number"
+                    android:padding="3dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:text="100"
+                    android:id="@+id/edt_assign_max"
+                    android:background="@drawable/edittextbackground"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#333"
+                    android:text="Grade by Standard"></TextView>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333"
+                    android:padding="3dp"
+                    android:inputType="number"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:id="@+id/spin_assign_standard"
+                    android:background="@drawable/edittextbackground"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#333"
+                    android:text="Grade Category"></TextView>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:textColor="#333"
+                    android:inputType="number"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:id="@+id/spin_assign_category"
+                    android:background="@drawable/edittextbackground"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#333"
+                    android:text="Impacts Students AVG"></TextView>
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textColor="#333"
+                    android:inputType="number"
+                    android:layout_marginTop="3dp"
+                    android:textSize="15dp"
+                    android:id="@+id/switch_assign_impact"
+                    android:background="@drawable/edittextbackground"></Switch>
+            </LinearLayout>
+
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Continue"
+             android:background="#54BE91"
+             android:id="@+id/btn_continue"
+             android:layout_marginTop="12dp"></Button>
+
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </ScrollView>

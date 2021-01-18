@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@drawable/round_linear"
+    android:padding="0dp"
+    android:id="@+id/ly_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:orientation="horizontal"
+         android:padding="20dp"
+         android:layout_height="wrap_content">
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:layout_width="70dp"
+             android:id="@+id/img_pic"
+             android:src="@drawable/grad_kimoby"
+             android:layout_height="70dp" />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="horizontal"
+             android:layout_height="70dp">
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_weight="3"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="6dp"
+                 android:orientation="vertical"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:id="@+id/txt_child_name"
+                     android:textColor="#333"
+                     android:textSize="18dp"
+                     android:textStyle="bold"
+                     android:text="John Doe"
+                     android:fontFamily="sans-serif"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:id="@+id/txt_child_class"
+                     android:textColor="#333"
+                     android:textSize="14dp"
+                     android:text="Grade 1"
+                     android:fontFamily="sans-serif"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:id="@+id/txt_child_dept"
+                     android:textColor="#333"
+                     android:textSize="14dp"
+                     android:text="Preparatoy"
+                     android:fontFamily="sans-serif"
+                     android:layout_height="match_parent" />
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:gravity="center_horizontal|center_vertical"
+                 android:layout_weight="1"
+                 android:orientation="vertical"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:id="@+id/txt_avg"
+                     android:text="60"
+                     android:fontFamily="@font/montserrat"
+                     android:textSize="26dp"
+                     android:textColor="#333"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textSize="12dp"
+                     android:textColor="#333"
+                     android:fontFamily="sans-serif"
+                     android:text="Term AVG"
+                     android:layout_height="wrap_content" />
+             </LinearLayout>
+         </LinearLayout>
+     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        android:layout_height="2dp"
+        android:background="#F6F6F6"></View>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:padding="20dp"
+     android:gravity="center_vertical"
+     android:layout_height="wrap_content">
+     <TextView
+         android:layout_width="wrap_content"
+         android:textColor="#888"
+         android:textSize="9dp"
+         android:fontFamily="@font/montserrat"
+         android:text="HOMEWORK: "
+         android:layout_height="wrap_content" />
+     <TextView
+         android:layout_width="20dp"
+         android:fontFamily="@font/montserrat"
+         android:textSize="15dp"
+         android:textStyle="bold"
+         android:id="@+id/txt_homework_count"
+         android:background="@drawable/round_shape"
+         android:text="0"
+         android:gravity="center_horizontal|center_vertical"
+         android:textColor="#1882f2"
+         android:layout_height="20dp" />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:textColor="#888"
+         android:layout_marginLeft="15dp"
+         android:textSize="9dp"
+         android:fontFamily="@font/montserrat"
+         android:text="MESSAGES: "
+         android:layout_height="wrap_content" />
+     <TextView
+         android:layout_width="20dp"
+         android:fontFamily="@font/montserrat"
+         android:textSize="15dp"
+         android:gravity="center_horizontal|center_vertical"
+         android:id="@+id/txt_msg_count"
+         android:background="@drawable/round_shape"
+         android:textStyle="bold"
+         android:text="0"
+         android:textColor="#1882f2"
+         android:layout_height="20dp" />
+
+     <View
+         android:layout_width="2dp"
+         android:layout_marginLeft="6dp"
+         android:layout_marginRight="6dp"
+         android:background="#F6F6F6"
+         android:layout_height="match_parent"></View>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:textColor="#888"
+         android:layout_marginLeft="0dp"
+         android:textSize="9dp"
+         android:fontFamily="@font/montserrat"
+         android:text="EXCELLING: "
+         android:layout_height="wrap_content" />
+     <TextView
+         android:layout_width="wrap_content"
+         android:fontFamily="@font/montserrat"
+         android:textSize="15dp"
+         android:id="@+id/txt_excel_count"
+         android:textStyle="bold"
+         android:text="0"
+         android:textColor="#1882f2"
+         android:layout_height="wrap_content" />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:textColor="#888"
+         android:layout_marginLeft="15dp"
+         android:textSize="9dp"
+         android:fontFamily="@font/montserrat"
+         android:text="STRUGGLING: "
+         android:layout_height="wrap_content" />
+     <TextView
+         android:layout_width="wrap_content"
+         android:fontFamily="@font/montserrat"
+         android:textSize="15dp"
+         android:id="@+id/txt_struggle_count"
+         android:textStyle="bold"
+         android:text="0"
+         android:textColor="#1882f2"
+         android:layout_height="wrap_content" />
+ </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

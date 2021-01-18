@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+android:background="#F6F6F6"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1C63AB"
+        android:elevation="4dp"
+        app:titleTextColor="#fff"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#1C63AB"
+        android:padding="6dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_height="110dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:id="@+id/stu_pic"
+                android:layout_height="70dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtSubject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    android:textColor="#C2E0F1"
+                    android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtSchYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="1999-2000 | "
+                        android:textColor="#C2E0F1"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Class:"
+                        android:textStyle="bold"
+                        android:textColor="#C2E0F1"
+                        android:textSize="13dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:id="@+id/txtClass"
+                        android:text="2"
+                        android:textColor="#54BE91"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:gravity="center_vertical|center_horizontal"
+
+                android:orientation="vertical"
+                android:layout_height="90dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="19dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#fff"
+                    android:id="@+id/txtAvg"
+                    android:text="0"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="9dp"
+                    android:textColor="#C2E0F1"
+                    android:text="Term Subject AVG"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="1.0dp"
+                    android:background="#fff"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="19dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#fff"
+                    android:id="@+id/txt_overall"
+                    android:text="0"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="9dp"
+                    android:textColor="#C2E0F1"
+                    android:text="Overall Subject AVG"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/_swly"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:background="#F6F6F6"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/buttons_L"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:background="#F6F6F6"
+                android:padding="8dp">
+
+
+                <ListView
+                    android:id="@+id/listGrades"
+                    android:layout_width="match_parent"
+                    android:background="#F6F6F6"
+
+                    android:layout_height="match_parent"></ListView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

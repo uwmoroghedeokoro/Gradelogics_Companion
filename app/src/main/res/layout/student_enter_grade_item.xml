@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@drawable/round_linear"
+    android:padding="0dp"
+    android:id="@+id/ly_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:id="@+id/img_pic"
+                android:src="@drawable/grad_kimoby"
+                android:layout_height="40dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/txt_student_name"
+                        android:textColor="#333"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:text="John Doe"
+                        android:fontFamily="sans-serif"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="right|center_vertical"
+
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                 <EditText
+                     android:layout_width="55dp"
+                     android:layout_height="45dp"
+                     android:inputType="number"
+                     android:background="@drawable/edittextbackground"
+                     android:hint="100"
+                     android:textColor="#000"
+                     android:textStyle="bold"
+                     android:paddingRight="7dp"
+                     android:gravity="right|center_vertical"
+                     android:textColorHint="#ddd"
+                     android:id="@+id/stu_score"></EditText>
+
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_marginLeft="3dp"
+                        android:text="-"
+                        android:padding="2dp"
+                        android:textColor="#333"
+                        android:textSize="16dp"
+                        android:background="#e8f5fc"
+                        android:layout_height="match_parent"
+                        android:id="@+id/stu_final_score"></TextView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

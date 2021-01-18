@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1C63AB"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1C63AB"
+        android:elevation="4dp"
+       app:titleTextColor="#fff"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:background="#1C63AB"
+         android:padding="1dp"
+         android:orientation="horizontal"
+         android:layout_marginLeft="0dp"
+         android:layout_marginRight="0dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="7dp"
+         android:layout_height="110dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="horizontal"
+             android:gravity="center_vertical"
+             android:layout_marginLeft="15dp"
+             android:layout_marginTop="1dp"
+             android:layout_height="wrap_content">
+
+             <de.hdodenhof.circleimageview.CircleImageView
+                 android:layout_width="70dp"
+                 android:id="@+id/stu_pic"
+                 android:layout_height="70dp" />
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_weight="2"
+                 android:orientation="vertical"
+                 android:layout_marginLeft="14dp"
+                 android:layout_height="wrap_content">
+
+                 <TextView
+                     android:id="@+id/txtDepartment"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Department"
+                     android:textColor="#C2E0F1"
+                     android:textSize="14dp" />
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:gravity="center_vertical"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:id="@+id/txtSchYear"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="0dp"
+                      android:text="1999-2000 | "
+                      android:textColor="#C2E0F1"
+                      android:textSize="14dp" />
+                  <TextView
+                      android:id="@+id/txtSchTerm"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="0dp"
+                      android:text="Term 1"
+                      android:textColor="#C2E0F1"
+                      android:textSize="14dp" />
+
+              </LinearLayout>
+
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_marginTop="3dp"
+                     android:gravity="center_vertical"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="0dp"
+                         android:text="Bal:"
+                         android:textStyle="bold"
+                         android:textColor="#C2E0F1"
+                         android:textSize="14dp" />
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:fontFamily="@font/montserrat"
+                         android:layout_marginLeft="5dp"
+                         android:textSize="14dp"
+                         android:textStyle="bold"
+                         android:id="@+id/txtBal"
+                         android:text="2"
+                         android:textColor="#54BE91"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:padding="2dp"
+                 android:gravity="center_vertical|center_horizontal"
+
+                 android:orientation="vertical"
+                 android:layout_height="90dp">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textSize="19dp"
+                     android:fontFamily="@font/montserrat"
+                     android:textColor="#fff"
+                     android:id="@+id/txtAvg"
+                     android:text="0"
+                     android:layout_height="wrap_content" />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textSize="9dp"
+                     android:textColor="#C2E0F1"
+                     android:text="Term AVG"
+                     android:layout_height="wrap_content" />
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_marginTop="4dp"
+                     android:layout_height="1.0dp"
+                     android:background="#fff"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="19dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#fff"
+                    android:id="@+id/txt_overall"
+                    android:text="0"
+                    android:layout_height="wrap_content" />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:textSize="9dp"
+                     android:textColor="#C2E0F1"
+                     android:text="Overall AVG"
+                     android:layout_height="wrap_content" />
+             </LinearLayout>
+         </LinearLayout>
+
+     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/buttons_L"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:background="#EFF9F8"
+                android:padding="0dp">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/tblayout"
+                    android:background="#fff"
+                    app:tabMaxWidth="0dp"
+
+                    app:tabTextAppearance="@style/MineCustomTabText"
+                    app:tabIndicatorColor="#54BE91"
+                    android:layout_height="95px">
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:background="#fafafa"
+                    android:padding="10dp"
+                    app:tabTextColor="#333333"
+                    app:tabSelectedTextColor="@color/colorPrimary"
+                    android:layout_height="match_parent"
+                    >
+
+                </androidx.viewpager.widget.ViewPager>
+
+                <ListView
+                    android:id="@+id/listSubjects"
+                    android:layout_width="match_parent"
+                    android:background="#F6F6F6"
+
+                    android:layout_height="match_parent"></ListView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/trans_panel"
+        android:visibility="invisible"
+        android:layout_height="match_parent"
+        android:background="#80000000"></RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/ly_fab_3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="New Message"></TextView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/chat_new_50"
+            app:backgroundTint="#0FB4EE"
+            app:fabCustomSize="50dp"
+            app:fabSize="auto"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:scaleType="center"
+        android:src="@drawable/plus_new_50"
+        app:backgroundTint="#0FB4EE"
+        app:fabCustomSize="50dp"
+        app:fabSize="auto"/>
+</RelativeLayout>

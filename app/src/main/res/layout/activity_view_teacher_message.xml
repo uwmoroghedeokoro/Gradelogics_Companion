@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    tools:context=".view_msg_Activity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:elevation="4dp"
+        app:title="Private Message"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#FAFAFA"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:textSize="17dp"
+            android:padding="0px"
+            android:id="@+id/msg_body"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:layout_height="1dp"></View>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+       android:gravity="bottom"
+
+        android:background="#fff"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:background="#ededed"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Write a message"
+                android:id="@+id/edt_new_msg"
+                android:gravity="left|top"
+                android:textColor="#333"
+                android:background="@drawable/customborder"></EditText>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="6dp"
+                android:textSize="14dp"
+                android:id="@+id/btn_send"
+                android:background="#54BE91"
+                android:text="Send"
+                android:layout_height="match_parent"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
